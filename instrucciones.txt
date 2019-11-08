@@ -1,0 +1,30 @@
+La solución de este ejercicio es la carpeta llamada fraudElect, consiste en el desarrollo de una aplicación de consola utilizando la última versión de Symfony.
+Se han utilizado las librerías que vienen por defecto en el composer.json de Symfony sin añadir ninguna más.
+
+En la estructura de base que viene una aplicación de consola de Symfony, he añadido:
+
+- La carpeta tmp: 
+   Se encuentra en la misma altura como la carpeta bin, src, var,..
+   Se encuentran los ficheros csv, xml importados
+
+- La carpeta Classes:
+  Se encuentra dentro de la carpeta src
+  Se encuentran las clases que se utilizan para la implementación del ejercicio
+
+- La carpeta Command.
+  Se encuentra dentro de la carpeta src
+  Se encuentra la función de la aplicación de consola
+
+
+Para este ejercicio he supuesto que tengo un proceso que se encarga de importar los ficheros de lecturas y los deja en la carpeta tmp de Symfony. Este proceso lo tendría automatizado a través de Jenkins. Pero igualmente la aplicación de consola podría analizar cualquier otro fichero que no estuviera en la carpeta tmp, solo se tendría que especificar la ruta.
+
+
+Para ejecutar la aplicación de consola nos situaremos en la terminal, a la altura de la carpeta bin y escribiremos "php bin/console app:electric-fraud pathFile".
+Como por ejemplo php bin/console app:electric-fraud tmp/2016-readings.csv 
+
+
+** En caso de que necesitéis un entorno de desarrollo para ejecutar del ejercicio, poneros en contacto conmigo y os facilitaría la vagrant que he utilizado para el desarrollo.
+
+
+
+

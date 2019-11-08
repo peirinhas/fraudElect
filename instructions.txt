@@ -1,0 +1,28 @@
+The solution to this exercise is the folder called fraudElect, consisting of a console application using the latest version of Symfony.
+It has not been necessary to add libraries to the composer file that comes by default with Symfony.
+
+In the structure that comes in Symfony console application, I added:
+
+- Tmp folder:
+   It is at the same height as the folder bin, src, var, ..
+   Here are the imported csv, xml files
+
+- Classes folder:
+  It is located inside the src folder
+  Here are the classes of the exercise
+
+- Command folder.
+  It is located inside the src folder
+  This is the action of the console application
+
+
+For this exercise I have assumed that there is a process to import the readings files by leaving them in the Symfony tmp folder. This process would have it automated through Jenkins. The console application can also analyze any other file that is not in the tmp folder, you have to write the absolute or relative path of the file.
+
+
+To execute the application we will first have to run composer to download the necessary libraries. Once this, we will write "php bin/console app: electric-fraud pathFile".
+
+Here is an example:
+php bin/console app: electric-fraud tmp/2016-readings.csv
+
+
+** In case you need a development environment to execute the exercise, contact me and I send an email with the Vagrant that I used for this exercise.
